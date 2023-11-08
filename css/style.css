@@ -1,5 +1,170 @@
-/* Reset default style */
-*{
-    margin: 0px;
-    padding: 0px;
+/* Reset default style CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui;
+}
+
+/* variabel untuk warna theme */
+:root {
+  --primary: royalblue;
+}
+
+/* styling container */
+.container {
+  background-image: linear-gradient(45deg, royalblue, mediumvioletred);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* styling bagian form */
+.container form {
+  width: 40%;
+  height: 550px;
+  margin-block: 50px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-inline: 55px;
+  padding-block: 30px;
+  box-sizing: border-box;
+  color: var(--primary);
+  box-shadow: 0px 0px 15px var(--primary);
+  transition: 0.3s;
+  overflow: hidden;
+}
+form h1 {
+  text-align: center;
+}
+form .kalkulator {
+  transition: 0.4s;
+}
+form .kalkulator h1 {
+  margin-bottom: 35px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form div.gender {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+}
+form div.gender div {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+form div.gender input {
+  width: 17px;
+  height: 17px;
+}
+form #wanita {
+  accent-color: mediumvioletred;
+}
+form span {
+  font-weight: bold;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+form input {
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  padding-inline: 15px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+}
+form input:focus {
+  outline: none;
+}
+.aksi {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+button {
+  width: 50%;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding-inline: 20px;
+  padding-block: 10px;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid var(--primary);
+  transition: 0.3s;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.notice {
+  height: 20px;
+  font-size: 15px;
+  color: red;
+}
+.up {
+  margin-top: -535px;
+  transition: 0.5s;
+}
+
+/* styling bagian hasil BMI */
+.hasil {
+  width: 100%;
+  margin-block: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hasil ul {
+  width: 90%;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.total {
+  height: 47px;
+  font-size: 35px;
+}
+.kategori {
+  height: 21px;
+  font-size: 17px;
+}
+.saran {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* styling footer */
+footer {
+  width: 100%;
+  padding-inline: 50px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 17px;
+  font-weight: 600;
+}
+footer span {
+  text-align: end;
 }

@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator BMI</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="kalkulator">
+          <h1>Kalkulator BMI</h1>
+          <div>
+            <span>Jenis Kelamin</span>
+            <div class="box-input gender">
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="pria"
+                  onclick="cekGender()"
+                />
+                <label for="pria">Pria</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="wanita"
+                  onclick="cekGender()"
+                />
+                <label for="wanita">Wanita</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>Berat Badan (kg)</span>
+            <div class="box-input">
+              <input type="number" id="berat" />
+            </div>
+          </div>
+          <div>
+            <span>Tinggi Badan (cm)</span>
+            <div class="box-input">
+              <input type="number" id="tinggi" />
+            </div>
+          </div>
+          <div class="aksi">
+            <span class="notice"></span>
+            <button id="hitung">Hitung</button>
+          </div>
+        </div>
+        <div class="hasil">
+          <h1>Hasil BMI</h1>
+          <span class="total"></span>
+          <span class="kategori"></span>
+          <h2 class="risiko"></h2>
+          <ul class="list-penyakit"></ul>
+          <p class="saran"></p>
+          <button id="ulangi">Hitung Ulang</button>
+        </div>
+      </form>
+      <footer>
+        <p>
+          Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+          tubuh yang menunjang penampilan, berat badan ideal juga menandakan
+          kondisi tubuh yang sehat. Bagaimana denganmu? Yuk hitung sekarang di
+          kalkulator BMI.
+        </p>
+        <span>Created with &hearts; By Vidi 2023</span>
+      </footer>
+    </div>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
