@@ -46,8 +46,16 @@ hitung.addEventListener("click", function (e) {
   };
 
   // validasi input
-  if (hasil.berat == "" || hasil.tinggi == "") {
+  let inputKosong = hasil.berat == "" || hasil.tinggi == "";
+  let angkaPertama =
+    hasil.berat.charAt(0) == 0 ||
+    hasil.tinggi.charAt(0) == 0 ||
+    hasil.berat.includes("-") ||
+    hasil.tinggi.includes("-");
+  if (inputKosong) {
     notice.textContent = "Berat dan Tinggi badan wajib diisi!";
+  } else if (angkaPertama) {
+    notice.textContent = "Angka pertama tidak boleh 0 atau -";
   } else {
     hitungBMI(hasil.berat, hasil.tinggi);
     console.log(hasil);
