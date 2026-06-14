@@ -168,3 +168,10 @@ footer {
 footer span {
   text-align: end;
 }
+
+/* responsive */
+ @media (max-width: 767px) {
+   form {
+     width: 90%;
+   }
+ }
