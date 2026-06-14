@@ -177,4 +177,7 @@ footer span {
    .container form {
      width: 90%;
    }
+   footer p {
+     display: none;
+   }
  }
